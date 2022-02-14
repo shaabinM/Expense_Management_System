@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/signin"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="120dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:background="#ccecfe"
@@ -70,59 +70,31 @@
         android:inputType="textPassword"></EditText>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnsignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
-        android:id="@+id/loginbtn"
-        android:text="Login"
-        android:backgroundTint="#a679f9"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"></com.google.android.material.button.MaterialButton>
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#a679f9"
+        android:text="Register"></com.google.android.material.button.MaterialButton>
 
-    <TextView
-        android:id="@+id/forgotpass"
+    <Button
+        android:id="@+id/btnsignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/loginbtn"
+        android:layout_below="@id/btnsignup"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:text="Forgot password?"
-        android:textColor="@color/black"></TextView>
-
-    <TextView
-        android:id="@+id/others"
-        android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:layout_above="@id/socialicons"
-        android:layout_below="@+id/forgotpass"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
-        android:text="or sign in with"></TextView>
-
-    <LinearLayout
-        android:id="@+id/socialicons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center">
+        android:textColor="@color/white"></Button>
 
 
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="20dp"
-            android:src="@drawable/google"></ImageView>
-
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="20dp"
-            android:src="@drawable/facebook"></ImageView>
-
-    </LinearLayout>
 </RelativeLayout>
 
