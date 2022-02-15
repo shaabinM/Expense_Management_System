@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
+
 
     <TextView
         android:id="@+id/name"
@@ -35,7 +36,7 @@
         android:textStyle="bold"></TextView>
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/username1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signin"
@@ -52,10 +53,10 @@
         android:textColorHint="@color/black"></EditText>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/username"
+        android:layout_below="@id/username1"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
@@ -69,51 +70,16 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"></EditText>
 
-    <EditText
-        android:id="@+id/repassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/password"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:background="#ccecfe"
-        android:drawableLeft="@drawable/ic_baseline_security_24"
-        android:drawablePadding="20dp"
-        android:hint="Retype-Password"
-        android:inputType="textPassword"
-        android:padding="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"></EditText>
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnsignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/repassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="#a679f9"
-        android:text="Register"></com.google.android.material.button.MaterialButton>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnsignin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnsignup"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/btnsignin1"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/password1"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="50dp"
-        android:text="Go to LOGIN Page"
+        android:text="Sign In"
         android:textColor="@color/white"></com.google.android.material.button.MaterialButton>
 
-
 </RelativeLayout>
-
