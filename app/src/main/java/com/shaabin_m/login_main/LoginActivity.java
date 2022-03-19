@@ -1,5 +1,6 @@
 package com.shaabin_m.login_main;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -22,6 +23,8 @@ public class LoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password1);
         btnlogin = (MaterialButton) findViewById(R.id.btnsignin1);
         DB = new DBHelper(this);
+        ActionBar action =getSupportActionBar();
+        action.hide();
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
