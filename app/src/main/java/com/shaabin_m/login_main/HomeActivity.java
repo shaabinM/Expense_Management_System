@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v){
         Intent i;
 
         switch (v.getId())  {
