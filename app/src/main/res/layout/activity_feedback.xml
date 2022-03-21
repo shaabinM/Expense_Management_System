@@ -4,12 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feedback"
-    android:gravity="center">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".feedback">
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="332dp"
         android:layout_height="wrap_content"
-        android:text="Give Feedback"
+        android:layout_marginBottom="20sp"
+        android:paddingBottom="10sp"
+        android:text="GIVE YOUR FEEDBACK"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_gravity="center"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:id="@+id/edit_text_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10sp"
+        android:text="m.shaabin@gmail.com"
+        android:focusable="false" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="10sp"/>
+    <EditText
+        android:id="@+id/edit_text_Subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailSubject"
+        android:layout_marginBottom="10sp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="10sp"/>
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="10"
+        android:gravity="start|top"
+        android:layout_marginBottom="10sp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        app:cornerRadius="10dp"/>
 </LinearLayout>

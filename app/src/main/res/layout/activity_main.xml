@@ -44,7 +44,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:background="#ccecfe"
-        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24_login"
         android:drawablePadding="20dp"
         android:hint="Username"
         android:padding="20dp"
