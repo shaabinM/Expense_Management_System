@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "996661792842",
+    "project_id": "societymanagement-fbe6b",
+    "storage_bucket": "societymanagement-fbe6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996661792842:android:bb2bc73f611f97ae8156b3",
+        "android_client_info": {
+          "package_name": "com.shaabin_m.login_main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996661792842-2i0ono3oferf7rvnlpcbf1b3tnranam9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI0USZJElkaisoAzXq37-DmWECPAWijgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996661792842-2i0ono3oferf7rvnlpcbf1b3tnranam9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

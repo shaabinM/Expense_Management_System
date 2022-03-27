@@ -1,14 +1,14 @@
-package com.shaabin_m.login_main;
+package com.shaabin_m.Login_Main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class about extends AppCompatActivity {
+public class search extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_search);
     }
 }

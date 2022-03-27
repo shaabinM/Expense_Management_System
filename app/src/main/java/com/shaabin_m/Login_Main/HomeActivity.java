@@ -1,12 +1,13 @@
-package com.shaabin_m.login_main;
+package com.shaabin_m.Login_Main;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
     private CardView addCard, searchCard, feedbackCard, aboutCard, profileCard;
@@ -25,7 +26,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         profileCard.setOnClickListener(this);
         aboutCard.setOnClickListener(this);
     }
-
+    public void logout(View v){
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+        finish();
+    }
     @Override
     public void onClick(View v){
         Intent i;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="com.shaabin_m.login_main">
+    package="com.shaabin_m.Login_Main">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
@@ -11,35 +11,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_Main">
         <activity
-            android:name=".profile"
+            android:name="com.shaabin_m.Login_Main.profile"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".about"
+            android:name="com.shaabin_m.Login_Main.about"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".feedback"
+            android:name="com.shaabin_m.Login_Main.feedback"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".search"
+            android:name="com.shaabin_m.Login_Main.search"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".add"
+            android:name="com.shaabin_m.Login_Main.add"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".HomeActivity"
+            android:name="com.shaabin_m.Login_Main.HomeActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.shaabin_m.Login_Main.LoginActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".MainActivity"
+            android:name="com.shaabin_m.Login_Main.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
