@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="com.shaabin_m.Login_Main">
+    package="com.shaabin_m.login_main">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,35 +12,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_Main">
         <activity
-            android:name="com.shaabin_m.Login_Main.profile"
+            android:name="com.shaabin_m.login_main.profile"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.shaabin_m.Login_Main.about"
+            android:name="com.shaabin_m.login_main.about"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.shaabin_m.Login_Main.feedback"
+            android:name="com.shaabin_m.login_main.feedback"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.shaabin_m.Login_Main.search"
+            android:name="com.shaabin_m.login_main.search"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.shaabin_m.Login_Main.add"
+            android:name="com.shaabin_m.login_main.add"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.shaabin_m.Login_Main.HomeActivity"
+            android:name="com.shaabin_m.login_main.HomeActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.shaabin_m.Login_Main.LoginActivity"
+            android:name="com.shaabin_m.login_main.LoginActivity"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.shaabin_m.Login_Main.MainActivity"
+            android:name="com.shaabin_m.login_main.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

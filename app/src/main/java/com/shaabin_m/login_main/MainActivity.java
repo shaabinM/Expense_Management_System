@@ -1,4 +1,4 @@
-package com.shaabin_m.Login_Main;
+package com.shaabin_m.login_main;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -21,9 +22,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.shaabin_m.login_main.R;
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -91,6 +93,22 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+
+
+
+                            //send verification email
+                            FirebaseUser fuser = fAuth.getCurrentUser();
+                            fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+                                    Toast.makeText(MainActivity.this, "Verification Email has been sent!", Toast.LENGTH_SHORT).show();
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.d(TAG, "onFailure: Email not sent"+e.getMessage());
+                                }
+                            });
                             Toast.makeText(MainActivity.this, "New User Created", Toast.LENGTH_SHORT).show();
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fstore.collection("users").document(userID);
@@ -124,6 +142,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             });
+
+
 
 //            public void onClick(View view) {
 //                String user = username.getText().toString();

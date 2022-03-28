@@ -1,4 +1,4 @@
-package com.shaabin_m.Login_Main;
+package com.shaabin_m.login_main;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.shaabin_m.Login_Main;
+package com.shaabin_m.login_main;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -6,11 +6,13 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
     private CardView addCard, searchCard, feedbackCard, aboutCard, profileCard;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -70,15 +70,26 @@
         android:id="@+id/mail"/>
 
     <Button
+        android:id="@+id/changeprofile"
         android:layout_width="wrap_content"
         android:layout_height="61dp"
-        android:layout_marginTop="70dp"
-        android:onClick="logout"
+        android:layout_marginTop="172dp"
+        android:text="Change Profile Picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
 
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+
+        android:onClick="logout"
         android:text="Logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mail" />
+        app:layout_constraintTop_toBottomOf="@+id/changeprofile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
