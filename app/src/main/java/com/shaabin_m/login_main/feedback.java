@@ -1,5 +1,6 @@
 package com.shaabin_m.login_main;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -17,6 +18,8 @@ public class feedback extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
+        ActionBar action =getSupportActionBar();
+        action.hide();
         mEditTextSubject = findViewById(R.id.edit_text_Subject);
         mEditTextMessage =findViewById(R.id.edit_text_message);
         mEditTextTo = findViewById(R.id.edit_text_to);

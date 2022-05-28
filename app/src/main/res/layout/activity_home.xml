@@ -70,14 +70,14 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpink"
-                    android:src="@drawable/ic_baseline_add_24"
+                    android:src="@drawable/ic_baseline_currency_rupee_24"
                     android:padding="10dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="ADD"/>
+                    android:text="PAY"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -87,7 +87,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Add Your Entries"
+                    android:text="Pay your fees"
                     android:padding="5dp"
                     android:textColor="@color/black_overlay"/>
 

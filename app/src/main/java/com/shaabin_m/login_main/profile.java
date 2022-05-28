@@ -2,6 +2,7 @@ package com.shaabin_m.login_main;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -46,6 +47,8 @@ public class profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        ActionBar action =getSupportActionBar();
+        action.hide();
         fname = findViewById(R.id.fullname);
         mail= findViewById(R.id.mail);
         address = findViewById(R.id.address);

@@ -1,5 +1,6 @@
 package com.shaabin_m.login_main;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -17,6 +18,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        ActionBar action =getSupportActionBar();
+        action.hide();
         addCard = (CardView) findViewById(R.id.add_btn);
         searchCard = (CardView) findViewById(R.id.search_btn);
         feedbackCard = (CardView) findViewById(R.id.feedback_btn);

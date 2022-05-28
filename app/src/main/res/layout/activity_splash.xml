@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SplashActivity"
+android:background="@color/purple_700">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APARTFIN"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:id="@+id/apartfin"
+        android:textAlignment="center">
+
+    </TextView>
+
+
+
+</LinearLayout>
+
+</RelativeLayout>
